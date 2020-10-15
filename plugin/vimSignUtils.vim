@@ -43,13 +43,13 @@ command! -nargs=1
        \ -range
        \ -complete=customlist,vimSignUtils#CompleteColour
        \ PlaceUtilSigns
-       \ :call vimSignUtils#PlaceUtilSigns(<f-args>, range(<line1>, <line2>))
+       \ call vimSignUtils#PlaceUtilSigns(<f-args>, range(<line1>, <line2>))
 
 " Unplace signs from ranges of lines
 command! -nargs=0
        \ -range
        \ UnplaceUtilSigns
-       \ :call vimSignUtils#UnplaceUtilSigns(range(<line1>, <line2>))
+       \ call vimSignUtils#UnplaceUtilSigns(range(<line1>, <line2>))
 
 " Suggested mappings
 " " Place a sign on the current line
